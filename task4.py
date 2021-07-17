@@ -12,15 +12,15 @@
 Для оценки Отлично в этом блоке необходимо выполнить 5 заданий из 7
 """
 
-def sum_numbers(x, a=0, sum=0):
+def profit_numbers(x, a=0, profit=0):
     if a == x:
-        return print(f'Сумма равна: {sum}')
+        return print(f'Сумма равна: {profit}')
     else:
-        sum += 1 / pow(-2, a)
+        profit += 1 / pow(-2, a)
         a += 1
-        return sum_numbers(x, a, sum)
+        return profit_numbers(x, a, sum)
 
 
 x = int(input('Введите количество элементов: '))
-sum_numbers(x)
+profit_numbers(x)
 
